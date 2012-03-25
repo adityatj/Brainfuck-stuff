@@ -53,7 +53,7 @@ public class BrainfuckToJava {
 				code += "\nSystem.out.print(buff[ptr]);";
 				break;
 			case ',':
-				code += "\nbuff[ptr] = stdin.readLine().charAt(0);";
+				code += "\nbuff[ptr] = (char)stdin.read();";
 				break;
 			case '[':
 				code += "\nwhile (buff[ptr] != (char)0) {";
